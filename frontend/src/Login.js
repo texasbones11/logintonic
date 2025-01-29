@@ -7,7 +7,7 @@ function Login() {
   const handleSimpleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/login', {
+      const response = await fetch('http://localhost:5050/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
@@ -20,7 +20,7 @@ function Login() {
   };
 
   const handleGitHubLogin = () => {
-    window.open('http://localhost:5000/login/github', '_self');
+    window.open('http://localhost:5050/login/github', '_self');
   };
 
   return (

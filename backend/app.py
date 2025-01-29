@@ -5,6 +5,9 @@ from config import Config
 from oauthlib.oauth2 import WebApplicationClient
 import requests
 import bcrypt
+import os
+
+os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
 app = Flask(__name__)
 app.config.from_object(Config)

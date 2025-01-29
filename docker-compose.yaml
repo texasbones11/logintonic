@@ -16,27 +16,16 @@ services:
   backend:
     build:
       context: ./backend
-    command: flask run --host=0.0.0.0
-    volumes:
-      - ./backend:/app
     ports:
-      - "5000:5000"
-    environment:
-      FLASK_APP: app.py
-      FLASK_ENV: development
-      DATABASE_URL: postgresql://user:password@db/main
+      - "5050:5000"
     depends_on:
       - db
 
   frontend:
     build:
       context: ./frontend
-    volumes:
-      - ./frontend:/app
     ports:
       - "3000:3000"
-    environment:
-      - NODE_ENV=production
 
 volumes:
   postgres-data:
