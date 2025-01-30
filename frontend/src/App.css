@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ff9d2f, #ff6126);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+button, input[type="submit"] {
+  background-color: #ff6126;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #e55a1e;
+}
+
+input[type="email"], input[type="password"] {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  width: 80%;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: border-color 0.3s ease-out;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+  outline: none;
+  border-color: #ff9d2f;
+}
